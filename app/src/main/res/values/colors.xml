@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#0288d1</color>
+    <color name="colorPrimaryLight">#b3e5fc</color>
+    <color name="colorAccent">#448aff</color>
+    <color name="textPrimary">#ffffff</color>
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="divider_color">#BDBDBD</color>
+    <color name="buttonbg">#ffffff</color>
+    <color name="darkgreen">#ff08ce5b</color>
+    <color name="lightgreen">#ff9ede46</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

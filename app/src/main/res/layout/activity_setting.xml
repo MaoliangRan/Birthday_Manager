@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03a9f4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settingback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@mipmap/lg"/>
+
+        <TextView
+            android:id="@+id/settingbackt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/voice_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cornners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒声音"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/voice_setting_btn"
+            android:layout_width="51dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/open_color"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/vibrate_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cornners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="振动"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/vibrate_setting_btn"
+            android:layout_width="51dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/open_color"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cornners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常驻通知栏"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/bar_setting_btn"
+            android:layout_width="51dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/open_color"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/ring_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cornners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒铃声"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/default_ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统铃声"
+            android:layout_toLeftOf="@+id/rgbtn"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/rgbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right"/>
+    </RelativeLayout>
+
+</LinearLayout>

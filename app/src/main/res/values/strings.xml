@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">生日管家</string>
+
+    <string name="title_home">主页</string>
+    <string name="title_birthday">生日</string>
+    <string name="title_mine">我的</string>
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sharedUserLabel">BirthdayManager</string>
+    <string name="versionCode">1</string>
+    <string name="versionName">1.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

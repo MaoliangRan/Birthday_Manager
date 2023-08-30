@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03a9f4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newitem_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/lg"/>
+
+        <TextView
+            android:id="@+id/newitem_backt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/retangle">
+
+        <Button
+            android:id="@+id/newitem_face"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/head_male"/>
+
+        <View
+            android:id="@+id/head_blank"
+            android:layout_width="120dp"
+            android:layout_height="0dp"/>
+
+        <EditText
+            android:id="@+id/newitem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/head_blank"
+            android:hint="    姓名/昵称     "/>
+
+        <RadioGroup
+            android:id="@+id/newitem_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/blk"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"/>
+        </RadioGroup>
+
+        <View
+            android:id="@+id/blk"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/retangle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="出生日期：       "
+
+            android:layout_margin="5dp"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/newitem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择时间"
+            android:layout_margin="5dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/newitem_date_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/retangle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="提醒时间：   "
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/newitem_remind_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/advance8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeActionId="1"
+                android:text=" 前一天 8：00"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:id="@+id/advance12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 前一天12:  00"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:id="@+id/intraday8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 当天    8：00"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:id="@+id/intraday12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 当天   12：00"
+                android:textSize="20dp"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  备注:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/newitem_remark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/retangle"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/b1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/newitem_save"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/save"/>
+
+        <View
+            android:id="@+id/b2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</LinearLayout>

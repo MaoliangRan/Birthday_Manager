@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/retangle"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/item_face"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/head_male"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/border"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Andy"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="7dp"/>
+
+            <TextView
+                android:id="@+id/item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="5月3日"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/rdblk"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="56dp"/>
+
+                <TextView
+                    android:id="@+id/item_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="18岁"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/rdblk"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/item_restdays"/>
+
+            <TextView
+                android:id="@+id/item_restdays"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center"
+                android:text="58天 "
+                android:textColor="#f44336"
+                android:textSize="40sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

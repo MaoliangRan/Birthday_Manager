@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f2f2f3"
+                android:orientation="vertical">
+
+    <View
+        android:id="@+id/blank1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f2f2f2"/>
+
+    <RelativeLayout
+        android:id="@+id/personalinfo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/blank1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cornners"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mine_face"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/user"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mine_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="生日管家"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mine_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mine_name"
+                android:gravity="center"
+                android:text="2021年1月3日"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/modify_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="25dp"
+            android:background="@drawable/pen"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/blank2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/personalinfo"
+        android:background="#f2f2f2"/>
+
+    <LinearLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blank2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <!--设置-->
+        <RelativeLayout
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/cornners"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/settingbtn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/settingbtn"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="设置"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/setting_go"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/right"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/blank3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/setting_layout"
+            android:background="#f2f2f2"/>
+        <!--反馈-->
+        <RelativeLayout
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/cornners"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sendbtn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/send"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/sendbtn"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="反馈"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/send_go"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/right"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/blank4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/setting_layout"
+            android:background="#f2f2f2"/>
+        <!--分享-->
+        <RelativeLayout
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/cornners"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sharebtn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/share"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/sharebtn"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="分享"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/share_go"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/right"/>
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/blank6"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#f2f2f2"/>
+        <!--管理-->
+        <RelativeLayout
+            android:id="@+id/manage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/cornners"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/managebth"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/trash"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/managebth"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="管理"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/manage_go"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/right"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/blank5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/setting_layout"
+            android:background="#f2f2f2"/>
+        <!--支持我们-->
+        <RelativeLayout
+            android:id="@+id/suportus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/cornners"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/suportusbtn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/suportus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/suportusbtn"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="关于我们"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/suportus_go"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/right"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
